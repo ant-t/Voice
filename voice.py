@@ -8,7 +8,7 @@ def nameGen(s=32, c=string.ascii_uppercase):
 	return ''.join(random.choice(c) for _ in range(s))
 
 if __name__ == '__main__':
-	os.system('cd')
+	os.chdir('/tmp')
 	tempDir = '.' + nameGen() 
 	os.system('mkdir ' + tempDir)
 	os.chdir(tempDir)
